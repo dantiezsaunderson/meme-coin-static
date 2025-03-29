@@ -25,6 +25,7 @@ jobs:
       - name: Run token scanner and update dashboard
         env:
           SOLANA_API_KEY: ${{ secrets.SOLANA_API_KEY }}
+          ETHEREUM_API_KEY: ${{ secrets.ETHEREUM_API_KEY }}
         run: python update_dashboard.py
 
       - name: Commit and push if changed
