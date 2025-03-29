@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Coin Signal Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding-top: 20px; background-color: #f8f9fa; }
+        .card { margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .token-alert { margin-bottom: 15px; padding: 15px; border-radius: 5px; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .badge.bg-primary { background-color: #6f42c1 !important; }
+        .badge.bg-success { background-color: #20c997 !important; }
+        .badge.bg-info { background-color: #0dcaf0 !important; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1>🔥 Meme Coin Signal Dashboard</h1>
+                    <p class="lead">Monitoring high-potential meme coins across Solana, Ethereum, and BSC</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <p class="text-muted">Last scan: March 29, 2025 15:24:48</p>
+                </div>
+            </div>
+        </header>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Scan Stats</h5>
+                        <div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Total Scanned:</span>
+                                <strong>120</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Passed Basic Filters:</span>
+                                <strong>15</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Qualified:</span>
+                                <strong>3</strong>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>New Alerts:</span>
+                                <strong>2</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Filter Settings</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Age Threshold:</span>
+                            <strong>&lt; 12 hours</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Liquidity Threshold:</span>
+                            <strong>&gt; $50,000</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Volume Threshold:</span>
+                            <strong>&gt; $25,000</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Sentiment Threshold:</span>
+                            <strong>&gt; 60</strong>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>DYOR Threshold:</span>
+                            <strong>&gt; 60</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Latest Signals</h5>
+                        <button class="btn btn-sm btn-primary" disabled>Scan Now</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="token-alert">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="mb-1">$SPEPE <span class="badge bg-primary">Solana</span></h5>
+                                    <p class="mb-2">Super Pepe</p>
+                                </div>
+                                <div>
+                                    <span class="badge bg-success">DYOR: 85</span>
+                                    <span class="badge bg-info">Sentiment: 77</span>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <p><strong>Liquidity:</strong> $58K</p>
+                                    <p><strong>Volume (1h):</strong> $31K</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>Age:</strong> 6.5 hours</p>
+                                    <p><strong>Top Influencer:</strong> SolWhaleAlpha</p>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Chart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="token-alert">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="mb-1">$MDOGE <span class="badge bg-primary">Ethereum</span></h5>
+                                    <p class="mb-2">Moon Doge</p>
+                                </div>
+                                <div>
+                                    <span class="badge bg-success">DYOR: 75</span>
+                                    <span class="badge bg-info">Sentiment: 68</span>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <p><strong>Liquidity:</strong> $72K</p>
+                                    <p><strong>Volume (1h):</strong> $45K</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>Age:</strong> 8.2 hours</p>
+                                    <p><strong>Top Influencer:</strong> CryptoGems</p>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Chart</a>
+                            </div>
+                        </div>
+                        
+                        <div class="token-alert">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="mb-1">$FLOKI <span class="badge bg-primary">BSC</span></h5>
+                                    <p class="mb-2">Floki Moon</p>
+                                </div>
+                                <div>
+                                    <span class="badge bg-success">DYOR: 70</span>
+                                    <span class="badge bg-info">Sentiment: 65</span>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <p><strong>Liquidity:</strong> $65K</p>
+                                    <p><strong>Volume (1h):</strong> $28K</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>Age:</strong> 10.1 hours</p>
+                                    <p><strong>Top Influencer:</strong> BSCWhale</p>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Chart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5>Telegram Integration</h5>
+            </div>
+            <div class="card-body">
+                <p>Your Telegram bot <strong>@MemeMaster6923Bot</strong> is configured to send alerts to channel <strong>@mememaster6923</strong>.</p>
+                <p>Alerts will be sent automatically when high-potential meme coins are detected.</p>
+                <div class="alert alert-info">
+                    <strong>Sample Alert Format:</strong><br>
+                    🔥 New Meme Coin Signal 🔥<br>
+                    Token: $SPEPE (Solana)<br>
+                    Liquidity: $58K | Volume: $31K<br>
+                    Sentiment Score: 77 (Mentioned by SolWhaleAlpha)<br>
+                    DYOR Score: 85 ✅<br>
+                    Chart: [Birdeye link]
+                </div>
+            </div>
+        </div>
+        
+        <footer class="mt-4 mb-5 text-center text-muted">
+            <p>Meme Coin Signal Detection System | Last Updated: March 29, 2025</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
